@@ -8,11 +8,11 @@
 #---------------------------------------------------------------------
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "it-flask-application-packages-2"
-  EB_APPLICATION_NAME       : "OMG"
-  EB_ENVIRONMENT_NAME       : "Omg-env"
+  EB_PACKAGE_S3_BUCKET_NAME : "it-flask-application-packages"
+  EB_APPLICATION_NAME       : "Myflask"
+  EB_ENVIRONMENT_NAME       : "Myflask-env-2"
   DEPLOY_PACKAGE_NAME       : "flask_app_${{ github.sha }}.zip"
-  AWS_REGION_NAME           : "us-west-2"
+  AWS_REGION_NAME           : "us-east-2"
 
 on: 
   push:
